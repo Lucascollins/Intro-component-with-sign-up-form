@@ -68,7 +68,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 31em;
+    height: 28em;
     background: none;
     padding: 0;
 }
