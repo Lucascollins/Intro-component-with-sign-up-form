@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+
+}
+
+html{
+    min-width: 375px;
+    max-width: 1440px;
+    margin: auto;
+    background: url(./images/bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+}
+
+body{
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 110vh;
+    padding: 10px;
+    margin-top: 2em;
+}
+
+.container h1{
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.container p {
+    color: white;
+    cursor:pointer;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10em;
+}
+
+.formss{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 31em;
+    background: none;
+    padding: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width:20em;
+    max-width: 25em;
+    height: 25em;
+    background-color: white; 
+    border-radius: 5px;
+    padding: 1.7em;
+}
+
+h2{
+    font-size: 0.9em;
+    font-weight: 400;
+    background-color:hsl(248, 32%, 49%);
+    border-radius: 5px;
+    padding: 0.8em 3.5em;
+    box-shadow: 0px 5px 2px 2px rgba(0,0,0,0.20);
+}
+
+
+button{
+    width: 100%;
+    height:4em;
+    border: 0;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+    text-transform: uppercase;
+    letter-spacing: 0.5pt;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:disabled{
+    background-color: hsl(249, 10%, 26%) ;
+}
+
+button,
+h2,h1,
+strong{
+    color: white;
+    cursor: pointer;
+}
+
+form input{
+    width: 100%;
+    height: 3em;
+    padding: 1em;
+    border: solid 1pt hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+
+input::placeholder{
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+.forms p{
+    font-size: 0.8em;
+    color: hsl(246, 25%, 77%);
+}
+
+form span{
+    color:hsl(0, 100%, 74%) ;
+    cursor: pointer;
+}
+
+input:focus{
+    border-color: hsl(0, 100%, 74%) ;
+    outline: hsl(0, 100%, 74%) ;
+}
+
+
+
+
+
+@media screen and (min-width:1024px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 100vh;
+        padding: 10px;
+    }
+    .contents{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 30em;
+        height: 20em;
+        padding: 10px;
+    }
+    .contents h1{
+        font-size: 3em;
+    }
+    
+    .contents p{
+        font-size: 1em;
+    }
+
+    .formss{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30em;
+        background: none;
+        padding: 0;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width:30em;
+        height: 25em;
+    }
+
+    /* active stats */
+    h1,strong,p,button{
+        transition: 0.3s;
+    }
+    
+    h1:hover,p:hover,button:hover{
+        letter-spacing: 1pt;
+    }
+    
+    input:focus{
+        border-color: hsl(0, 100%, 74%) ;
+        outline: hsl(0, 100%, 74%) ;
+    }
+    
+    
+}
