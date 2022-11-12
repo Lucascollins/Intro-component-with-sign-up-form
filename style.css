@@ -37,7 +37,7 @@ body{
     text-align: center;
     justify-content: space-around;
     width: 100%;
-    height: 120vh;
+    height: 110vh;
     padding: 10px;
     margin-top: 2em;
 }
@@ -67,7 +67,7 @@ body{
 .formss{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 31em;
     background: none;
     padding: 0;
@@ -210,4 +210,18 @@ input:focus{
     }
     
     
+}
+
+@media screen and (max-height:600) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 140vh;
+        padding: 10px;
+        margin-top: 2em;
+    }
 }
